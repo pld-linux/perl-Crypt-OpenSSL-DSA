@@ -10,7 +10,8 @@ Summary(pl):	Crypt::OpenSSL::DSA - algorytm DSA u¿ywaj±cy OpenSSL
 Name:		perl-Crypt-OpenSSL-DSA
 Version:	0.11
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	87db60686b76ee4633f4ec6bf0b666b1
