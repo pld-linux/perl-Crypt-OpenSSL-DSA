@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	OpenSSL-DSA
+%define		pdir	Crypt
+%define		pnam	OpenSSL-DSA
 Summary:	Crypt::OpenSSL::DSA - Digital Signature Algorithm using OpenSSL
 Summary(pl):	Crypt::OpenSSL::DSA - algorytm DSA u¿ywaj±cy OpenSSL
 Name:		perl-Crypt-OpenSSL-DSA
