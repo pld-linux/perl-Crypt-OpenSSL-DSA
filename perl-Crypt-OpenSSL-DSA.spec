@@ -32,7 +32,7 @@ podpisów DSA (Digital Signature Algorithm).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 ##### were disabled - some of tests fail randomly ?
