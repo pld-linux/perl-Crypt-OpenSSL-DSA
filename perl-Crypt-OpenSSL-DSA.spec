@@ -34,7 +34,8 @@ podpisów DSA (Digital Signature Algorithm).
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 ##### were disabled - some of tests fail randomly ?
 %{?with_tests:%{__make} test}
@@ -42,7 +43,8 @@ podpisów DSA (Digital Signature Algorithm).
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
