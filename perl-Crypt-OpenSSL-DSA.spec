@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
@@ -37,7 +37,7 @@ podpisów DSA (Digital Signature Algorithm).
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 ##### were disabled - some of tests fail randomly ?
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
