@@ -8,13 +8,13 @@
 Summary:	Crypt::OpenSSL::DSA - Digital Signature Algorithm using OpenSSL
 Summary(pl):	Crypt::OpenSSL::DSA - algorytm DSA u¿ywaj±cy OpenSSL
 Name:		perl-Crypt-OpenSSL-DSA
-Version:	0.11
-Release:	3
+Version:	0.12
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	87db60686b76ee4633f4ec6bf0b666b1
+# Source0-md5:	370fb0dc25b2ab7e73030fada6acafef
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
