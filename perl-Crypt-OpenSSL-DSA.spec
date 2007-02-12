@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	OpenSSL-DSA
 Summary:	Crypt::OpenSSL::DSA - Digital Signature Algorithm using OpenSSL
-Summary(pl):	Crypt::OpenSSL::DSA - algorytm DSA u¿ywaj±cy OpenSSL
+Summary(pl.UTF-8):   Crypt::OpenSSL::DSA - algorytm DSA uÅ¼ywajÄ…cy OpenSSL
 Name:		perl-Crypt-OpenSSL-DSA
 Version:	0.13
 Release:	1
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Crypt::OpenSSL::DSA implements the DSA (Digital Signature Algorithm)
 signature verification system.
 
-%description -l pl
-Modu³ Crypt::OpenSSL::DSA jest implementacj± systemu weryfikacji
-podpisów DSA (Digital Signature Algorithm).
+%description -l pl.UTF-8
+ModuÅ‚ Crypt::OpenSSL::DSA jest implementacjÄ… systemu weryfikacji
+podpisÃ³w DSA (Digital Signature Algorithm).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
