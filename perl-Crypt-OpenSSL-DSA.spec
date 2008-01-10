@@ -35,6 +35,7 @@ podpisów DSA (Digital Signature Algorithm).
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 ##### were disabled - some of tests fail randomly ?
