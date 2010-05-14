@@ -17,8 +17,10 @@ Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.
 # Source0-md5:	3ae371799108731623a8d9b3adf7f767
 URL:		http://search.cpan.org/dist/Crypt-OpenSSL-DSA/
 BuildRequires:	openssl-devel >= 0.9.7d
+BuildRequires:	openssl-tools
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	which
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
