@@ -41,7 +41,6 @@ podpisów DSA (Digital Signature Algorithm).
 	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
-##### were disabled - some of tests fail randomly ?
 %{?with_tests:%{__make} test}
 
 %install
@@ -49,6 +48,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorarch}/Crypt/OpenSSL/DSA/Signature.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -58,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Crypt/OpenSSL/DSA.pm
 %dir %{perl_vendorarch}/auto/Crypt/OpenSSL/DSA
-%{perl_vendorarch}/auto/Crypt/OpenSSL/DSA/*.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/OpenSSL/DSA/*.so
-%{_mandir}/man3/*
+%{perl_vendorarch}/auto/Crypt/OpenSSL/DSA/DSA.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/OpenSSL/DSA/DSA.so
+%{_mandir}/man3/Crypt::OpenSSL::DSA*.3pm*
