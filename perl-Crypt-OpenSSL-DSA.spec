@@ -59,6 +59,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Crypt/OpenSSL/DSA.pm
 %dir %{perl_vendorarch}/auto/Crypt/OpenSSL/DSA
-%{perl_vendorarch}/auto/Crypt/OpenSSL/DSA/DSA.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/OpenSSL/DSA/DSA.so
 %{_mandir}/man3/Crypt::OpenSSL::DSA*.3pm*
